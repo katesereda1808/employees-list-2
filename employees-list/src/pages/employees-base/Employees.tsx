@@ -8,18 +8,14 @@ import { EMPLOYEES } from  "../../data/data";
 function Employees() {
   return (
     <div>
-      <h1>Employees</h1>
-      <Search/>
-      <Filters/>
-      <Button/>
-      {EMPLOYEES.map((employee) => (
-        // console.log('employee', employee);
-        <EmployeeCard key={employee.id} employee={employee} />
-      )) }
-      {/* employees.map((employee) => (
+      <div>
+        <Search/>
+        <Button/>
+        {EMPLOYEES.map((employee) => (
           <EmployeeCard key={employee.id} employee={employee} />
-        )) */}
-      {/* <EmployeeCard/> */}
+        )) }
+      </div>
+      <Filters/>
     </div>
   )
 }
