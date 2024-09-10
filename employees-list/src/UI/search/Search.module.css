@@ -1,0 +1,17 @@
+.searchBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchInput {
+    padding: 14px 16px;
+    color: #84909B;
+    background: #E8F1F4;
+    border: 1px solid #E0EBEF;
+    border-radius: 4px;
+}
+
+.hint {
+    font-size: 13px;
+    color: #B0BCC7;
+}

@@ -1,19 +1,44 @@
-.card {
+.cardContainer {
   border: 3px solid #ccc;
   margin: 10px;
   padding: 10px;
   border-radius: 14px;
 }
 
-.cardTitle {
-  font-size: 1.5em;
-  color: #333;
+.cardRow {
+  display: flex;
 }
 
-.cardRole {
+.employeeName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2A358C;
+}
+
+.employeeINN {
+  color: #84909B;
+  background: #ffffff;
+  padding: 4px 8px;
+}
+
+.employeeContract {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px;
+  color: #ffffff;
+  background: #00AE5B;
+  border-radius: 4px;
+}
+
+.employeeRole {
   color: #555;
 }
 
-.cardDepartment {
+.employeeDepartment {
   color: #777;
+}
+
+.extraInfo {
+  padding: 0 15px;
 }

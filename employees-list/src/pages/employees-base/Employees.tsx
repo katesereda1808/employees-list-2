@@ -1,16 +1,15 @@
 // import { useState } from 'react'
 import Filters from "../../UI/filters/Filters";
-import Button from "../../UI/button/Button";
 import EmployeeCard from "../../UI/employee-card/EmployeeCard";
 import Search from "../../UI/search/Search";
 import { EMPLOYEES } from  "../../data/data";
+import styles from './Employees.module.css';
 
 function Employees() {
   return (
-    <div>
-      <div>
+    <div className={styles.pageContainer}>
+      <div className={styles.employeesList}>
         <Search/>
-        <Button/>
         {EMPLOYEES.map((employee) => (
           <EmployeeCard key={employee.id} employee={employee} />
         )) }

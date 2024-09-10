@@ -1,7 +1,10 @@
+import styles from './Search.module.css';
+
 function Search() {
   return (
-    <div>
-      <h1>Search</h1>
+    <div className={styles.searchBlock}>
+      <input className={styles.searchInput} type="text" placeholder="Поиск сотрудника" />
+      <span className={styles.hint}>Например, Ивано Иван</span>
     </div>
   );
 }
