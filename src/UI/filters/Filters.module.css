@@ -1,0 +1,29 @@
+.filtersContainer {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: #ffff;
+    border-radius: 10px;
+}
+
+.filtersRow {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    border-top: 1px solid #DBE4ED;
+    align-items: stretch;
+}
+
+.filtersRow > * {
+    /* flex-grow: 1; */
+    width: 100%;
+}
+
+.block {
+    padding: 30px;
+}
+
+.addNewEmployeeBlock {
+    border-bottom: 1px solid #DBE4ED;
+}
