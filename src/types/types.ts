@@ -5,6 +5,7 @@ export interface Employee {
   status: string;
   role: string;
   number: number;
+  citizenship: string;
   city: string;
   birthday: string;
   age: number;

@@ -1,12 +1,23 @@
 .cardContainer {
-  border: 3px solid #ccc;
-  margin: 10px;
+  background: #E7F3FF;
+  border-radius: 4px;
+  margin: 10px 0;
   padding: 10px;
-  border-radius: 14px;
 }
 
 .cardRow {
   display: flex;
+}
+
+.cardRowMainInfo {
+  gap: 20px;
+}
+
+.cardRowMainInfo > * {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .employeeName {
@@ -19,6 +30,7 @@
   color: #84909B;
   background: #ffffff;
   padding: 4px 8px;
+  border-radius: 4px;
 }
 
 .employeeContract {
