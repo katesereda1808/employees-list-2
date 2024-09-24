@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Employees from './pages/employees-base/Employees';
+import EmployeesPage from './pages/main-page/MainPage';
 import './App.css'
 
 function App() {
   return (
     <div>
-      <Employees />
+      <EmployeesPage />
     </div>
   )
 }

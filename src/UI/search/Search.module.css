@@ -3,12 +3,14 @@
     flex-direction: column;
 }
 
-.searchInput {
+.inputContainer {
     padding: 14px 16px;
     color: #84909B;
     background: #E8F1F4;
     border: 1px solid #E0EBEF;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hint {

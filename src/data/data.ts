@@ -1,12 +1,87 @@
 import { Employee } from "../types/types";
+// status
+// contract
+// add everywhere property contract: 'СМЗ'
+// country the first 'RU', then 'TJ', then 'RU', then 'TJ'
+// city everywhere 'Санкт-Петербург'
+// birthday everywhere 23.06.2001
+// age everywhere 21
+// gender everywhere 'мужской'
+// add property status with the value: the first - 'Истекают все документы', then 'Истекает патент', then 'Истекает патент', then 'Пропустил медосмотр', then 'Прошел все процедуры'
 
 export const EMPLOYEES: Employee[] = [
-    { id: 1, inn: 111, name: 'Константинопольский Константин Константинович', role: 'промышленный альпинист', status: 'смз', number: 133234343, citizenship: 'RU', city: 'city', birthday: 'birthday', age: 23, gender: 'муж' },
-    { id: 2, inn: 222, name: 'Иванов Иван Иванович', role: 'промышленный альпинист', status: 'status', number: 1243234, citizenship: 'RU', city: 'city', birthday: 'birthday', age: 44, gender: 'муж' },
-    { id: 3, inn: 333, name: 'Константинопольский Константин Константинович', role: 'Designer', status: 'status', number: 654565, citizenship: 'RU', city: 'city', birthday: 'birthday', age: 30, gender: 'муж' },
-    { id: 3, inn: 333, name: 'Иванов Иван Иванович', role: 'промышленный альпинист', status: 'status', number: 654565, citizenship: 'RU', city: 'city', birthday: 'birthday', age: 30, gender: 'муж' },
-    { id: 3, inn: 333, name: 'Константинопольский Константин Константинович', role: 'промышленный альпинист', status: 'status', number: 654565, citizenship: 'RU', city: 'city', birthday: 'birthday', age: 30, gender: 'муж' },
-];
+    {
+      id: 1,
+      inn: 111,
+      name: 'Константинопольский Константин Константинович',
+      role: 'промышленный альпинист',
+      contract: 'СМЗ',
+      number: 133234343,
+      citizenship: 'RU',
+      city: 'Санкт-Петербург',
+      birthday: '23.06.2001',
+      age: 21,
+      gender: 'мужской',
+      status: 'Истекают все документы',
+    },
+    {
+      id: 2,
+      inn: 222,
+      name: 'Иванов Иван Иванович',
+      role: 'промышленный альпинист',
+      contract: 'СМЗ',
+      number: 1243234,
+      citizenship: 'TJ',
+      city: 'Санкт-Петербург',
+      birthday: '23.06.2001',
+      age: 21,
+      gender: 'мужской',
+      status: 'Истекает патент',
+    },
+    {
+      id: 3,
+      inn: 333,
+      name: 'Константинопольский Константин Константинович',
+      role: 'Designer',
+      contract: 'СМЗ',
+      number: 654565,
+      citizenship: 'RU',
+      city: 'Санкт-Петербург',
+      birthday: '23.06.2001',
+      age: 21,
+      gender: 'мужской',
+      status: 'Истекает патент',
+    },
+    {
+      id: 4,
+      inn: 444,
+      name: 'Иванов Иван Иванович',
+      role: 'промышленный альпинист',
+      contract: 'СМЗ',
+      number: 654565,
+      citizenship: 'TJ',
+      city: 'Санкт-Петербург',
+      birthday: '23.06.2001',
+      age: 21,
+      gender: 'мужской',
+      status: 'Пропустил медосмотр',
+    },
+    {
+      id: 5,
+      inn: 555,
+      name: 'Константинопольский Константин Константинович',
+      role: 'промышленный альпинист',
+      contract: 'СМЗ',
+      number: 654565,
+      citizenship: 'RU',
+      city: 'Санкт-Петербург',
+      birthday: '23.06.2001',
+      age: 21,
+      gender: 'мужской',
+      status: 'Прошел все процедуры',
+    },
+  ];
+  
 // ]className={styles.employeeName}>Константинопольский Константин Константинович{employee.name}</span>
 // <span className={styles.employeeINN}>ИНН 1234567890</span>
 // <span className={styles.employeeContract}>СМЗ</span>

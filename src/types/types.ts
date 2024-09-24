@@ -4,6 +4,7 @@ export interface Employee {
   inn: number;
   status: string;
   role: string;
+  contract: string;
   number: number;
   citizenship: string;
   city: string;
