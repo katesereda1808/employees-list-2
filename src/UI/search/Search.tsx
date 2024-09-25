@@ -3,16 +3,18 @@ import styles from './Search.module.css';
 import SearchIcon from '../../assets/search-icon.svg';
 
 interface SearchProps {
-  onSearchChange: (searchTerm: string) => void; // Callback to parent
+  onSearch: (searchTerm: string) => void;
 }
 
-const Search: React.FC<SearchProps> = ({ onSearchChange }) => {
+const Search: React.FC<SearchProps> = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newTerm = e.target.value;
-    setSearchTerm(newTerm);
-    onSearchChange(newTerm); // Pass search term to parent
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSearchClick = () => {
+    onSearch(searchTerm);
   };
 
   return (
@@ -25,11 +27,10 @@ const Search: React.FC<SearchProps> = ({ onSearchChange }) => {
           value={searchTerm}
           onChange={handleInputChange}
         />
-        <button>
+        <button onClick={handleSearchClick}>
           <img src={SearchIcon} alt="search btn" />
         </button>
       </div>
-      <span className={styles.hint}>Например, Ивано Иван</span>
     </div>
   );
 };

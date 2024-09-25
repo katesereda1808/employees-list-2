@@ -1,28 +1,27 @@
-import React from 'react';
-import { EMPLOYEES } from '../../data/data'; // Import the array of employees
-import EmployeeCard from '../employee-card/EmployeeCard'; // EmployeeCard component
+import { useState } from 'react';
+import EmployeeCard from "../../UI/employee-card/EmployeeCard";
+import Search from "../../UI/search/Search";
+import { EMPLOYEES } from  "../../data/data";
 import styles from './EmployeeList.module.css';
 
+const EmployeeList = () => {
+  const [filteredEmployees, setFilteredEmployees] = useState(EMPLOYEES);
 
-interface EmployeeListProps {
-  searchTerm: string; // Explicitly define searchTerm as a string
-}
-
-const EmployeeList: React.FC<EmployeeListProps> = ({ searchTerm }) => {
-  // Filter employees based on search term (case-insensitive)
-  const filteredEmployees = EMPLOYEES.filter(employee =>
-    employee.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const handleSearch = (searchTerm: string) => {
+    const searchResults = EMPLOYEES.filter((employee) =>
+      employee.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredEmployees(searchResults);
+  };
 
   return (
-    <div className={styles.listContainer}>
-      {filteredEmployees.length > 0 ? (
-        filteredEmployees.map(employee => (
+    <div className={styles.pageContainer}>
+      <div className={styles.employeesList}>
+        <Search onSearch={handleSearch} />
+        {filteredEmployees.map((employee) => (
           <EmployeeCard key={employee.id} employee={employee} />
-        ))
-      ) : (
-        <p>No employees found</p>
-      )}
+        ))}
+      </div>
     </div>
   );
 };
