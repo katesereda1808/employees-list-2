@@ -7,6 +7,16 @@
     border-radius: 10px;
 }
 
+.filtersBody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filtersHeading {
+    margin: 0;
+}
+
 .filtersRow {
     display: flex;
     width: 100%;
@@ -18,6 +28,20 @@
 .filtersRow > * {
     /* flex-grow: 1; */
     width: 100%;
+}
+
+.filtersItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filtersSelect {
+    padding: 14px 16px;
+    color: #84909B;
+    background: #E8F1F4;
+    border: 1px solid #E0EBEF;
+    border-radius: 4px;
 }
 
 .block {

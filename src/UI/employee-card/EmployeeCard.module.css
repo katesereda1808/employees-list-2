@@ -3,18 +3,29 @@
   border-radius: 4px;
   margin: 10px 0;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
 }
 
 .cardRow {
   display: flex;
 }
 
+@media (max-width: 1400px) {
+  .cardRow {
+    flex-wrap: wrap;
+  }
+}
+
 .cardRowMainInfo {
   gap: 20px;
+  /* height: 24px;  */
 }
 
 .cardRowMainInfo > * {
-  height: 24px;
+  /* height: 24px; */
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -31,6 +42,8 @@
   background: #ffffff;
   padding: 4px 8px;
   border-radius: 4px;
+  height: 24px;
+  white-space: nowrap;
 }
 
 .employeeContract {
@@ -41,6 +54,7 @@
   color: #ffffff;
   background: #00AE5B;
   border-radius: 4px;
+  height: 24px;
 }
 
 .employeeRole {
@@ -53,4 +67,14 @@
 
 .extraInfo {
   padding: 0 15px;
+  white-space: nowrap;
+}
+
+.employeeStatus {
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+  background: #E52E2E;
+  color: #ffffff;
+  width: fit-content;
 }

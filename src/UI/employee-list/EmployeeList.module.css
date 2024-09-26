@@ -1,3 +1,24 @@
 .listContainer {
     font-size: 14px;
 }
+
+.pageContainer {
+    display: flex;
+    background: #F7F8F9;
+    gap: 30px;
+    padding: 41px 50px;
+    width: 100%;
+}
+
+.employeesList {
+    background: #ffff;
+    height: 100%;
+    padding: 30px;
+    width: 100%;
+}
+
+.notFound {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 15px;
+}

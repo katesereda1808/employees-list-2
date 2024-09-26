@@ -27,7 +27,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
           value={searchTerm}
           onChange={handleInputChange}
         />
-        <button onClick={handleSearchClick}>
+        <button className={styles.searchBtn} onClick={handleSearchClick}>
           <img src={SearchIcon} alt="search btn" />
         </button>
       </div>

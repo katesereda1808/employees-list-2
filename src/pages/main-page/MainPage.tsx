@@ -6,10 +6,10 @@ function EmployeesPage() {
 
   return (
     <div className={styles.pageContainer}>
-      <div className={styles.employeesList}>
+      {/* <div className={styles.employeesList}> */}
       <EmployeeList />
-      </div>
-      <Filters/>
+      {/* </div> */}
+      {/* <Filters/> */}
     </div>
   )
 }
