@@ -11,7 +11,7 @@ import { Employee } from "../types/types";
 
 export const EMPLOYEES: Employee[] = [
     {
-      id: 1,
+      id: '1',
       inn: 111,
       name: 'Константинопольский Константин Константинович',
       role: 'промышленный альпинист',
@@ -25,7 +25,7 @@ export const EMPLOYEES: Employee[] = [
       status: 'Истекают все документы',
     },
     {
-      id: 2,
+      id: '2',
       inn: 222,
       name: 'Иванов Иван Иванович',
       role: 'промышленный альпинист',
@@ -39,7 +39,7 @@ export const EMPLOYEES: Employee[] = [
       status: 'Истекает патент',
     },
     {
-      id: 3,
+      id: '3',
       inn: 333,
       name: 'Константинопольский Константин Константинович',
       role: 'Designer',
@@ -53,7 +53,7 @@ export const EMPLOYEES: Employee[] = [
       status: 'Истекает патент',
     },
     {
-      id: 4,
+      id: '4',
       inn: 444,
       name: 'Иванов Иван Иванович',
       role: 'промышленный альпинист',
@@ -67,7 +67,7 @@ export const EMPLOYEES: Employee[] = [
       status: 'Пропустил медосмотр',
     },
     {
-      id: 5,
+      id: '5',
       inn: 555,
       name: 'Константинопольский Константин Константинович',
       role: 'промышленный альпинист',
