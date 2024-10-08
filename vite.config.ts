@@ -11,5 +11,9 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
+  },
+  build: {
+    outDir: 'dist',   // Output directory for the build
+    sourcemap: true,  // Useful for debugging the dev build
   }
 })
