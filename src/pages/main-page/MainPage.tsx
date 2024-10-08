@@ -1,4 +1,3 @@
-import Filters from "../../UI/filters/Filters";
 import styles from './MainPage.module.css';
 import EmployeeList from "../../UI/employee-list/EmployeeList";
 

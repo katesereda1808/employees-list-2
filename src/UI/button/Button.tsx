@@ -1,6 +1,7 @@
 import style from './Button.module.css';
 
 interface ButtonProps {
+  className?: string;
   content: string | JSX.Element; // Can be a string or JSX element for flexibility
   onClick: () => void;           // Function triggered on button click
   color?: string;                // Optional prop for button color
