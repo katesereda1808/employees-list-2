@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist',   // Output directory for the build
+    outDir: 'build',   // Output directory for the build
     sourcemap: true,  // Useful for debugging the dev build
   }
 })
