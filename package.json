@@ -10,7 +10,8 @@
     "test": "echo \"No tests specified\" && exit 0",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy:dev": "gh-pages -d build"
+    "deploy:dev": "gh-pages -d build",
+    "deploy": "npm run deploy:dev"
   },
   "dependencies": {
     "react": "^18.3.1",
